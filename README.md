@@ -36,7 +36,6 @@ If no action is profitable, the system recommends **No Action**.
 - Python
 - Pandas, NumPy
 - Scikit-learn
-- XGBoost
 - Matplotlib, Seaborn
 - Streamlit
 
