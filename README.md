@@ -57,7 +57,7 @@ customer-churn-recommendation-system/
 │
 ├── Customer_Churn_Pred_Workflow.ipynb     # Research & experimentation notebook
 ├── Churn_pred_pipeline.ipynb              # Production pipeline training notebook
-├── churn_app.py                               # Streamlit application
+├── churn_app.py                           # Streamlit application
 ├── churn_pipeline.pkl                     # Saved trained pipeline model
 ├── Customer-Churn.csv                     # Dataset
 ├── requirements.txt                       # Project dependencies
