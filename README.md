@@ -19,12 +19,12 @@ This project builds a complete ML lifecycle solution that:
 
 ## 🎯 Key Highlights
 
-✅ Exploratory Data Analysis and feature understanding
-✅ Handling imbalanced data and evaluating multiple strategies
-✅ Hyperparameter tuning and threshold optimization
-✅ Production-ready preprocessing pipeline
-✅ Probability-based churn decision system
-✅ Interactive Streamlit deployment with recommendations
+* Exploratory Data Analysis and feature understanding
+* Handling imbalanced data and evaluating multiple strategies
+* Hyperparameter tuning and threshold optimization
+* Production-ready preprocessing pipeline
+* Probability-based churn decision system
+* Interactive Streamlit deployment with recommendations
 
 ---
 
