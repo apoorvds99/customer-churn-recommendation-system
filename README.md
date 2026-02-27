@@ -1,42 +1,103 @@
-# Customer Churn Prediction & Recommendation System
+# 📊 Customer Churn Recommendation System
 
-## Overview
-This project predicts which customers are likely to churn and recommends the most profitable retention action using machine learning.
-
-The system not only predicts churn but also suggests what the company should do to retain each customer.
+An end-to-end Machine Learning project that predicts telecom customer churn and provides retention recommendations using a production-ready pipeline and an interactive Streamlit application.
 
 ---
 
-## Key Features
-- Churn prediction using ML models
-- Customer value estimation
-- Retention strategy recommendation
-- Profit-based decision logic
+## 🚀 Project Overview
+
+Customer churn is a major business challenge for telecom companies.
+This project builds a complete ML lifecycle solution that:
+
+* analyzes churn patterns
+* predicts churn probability
+* applies business-driven decision thresholds
+* provides actionable retention suggestions
+* deploys predictions through an interactive Streamlit app
 
 ---
 
-## How it Works
-1. The model predicts churn probability.
-2. Customer value is estimated.
-3. Different retention actions are simulated.
-4. The action with the highest expected profit is recommended.
+## 🎯 Key Highlights
 
-If no action is profitable, the system recommends **No Action**.
-
----
-
-## Files in this Project
-- `Customer_Churn_Pred.ipynb` → Main notebook
-- `Customer-Churn.csv` → Dataset
-- `requirements.txt` → Required libraries
+✅ Exploratory Data Analysis and feature understanding
+✅ Handling imbalanced data and evaluating multiple strategies
+✅ Hyperparameter tuning and threshold optimization
+✅ Production-ready preprocessing pipeline
+✅ Probability-based churn decision system
+✅ Interactive Streamlit deployment with recommendations
 
 ---
 
-## Tech Stack
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Matplotlib, Seaborn
+## 🧠 Model Approach
+
+The final model uses:
+
+* Logistic Regression with class imbalance handling
+* Separate preprocessing for numeric and categorical features
+* ColumnTransformer + Pipeline for reproducible transformations
+* Probability threshold (0.35) optimized for churn recall
+
+The threshold ensures high-risk customers are identified early for retention actions.
+
+---
+
+## 🛠 Tech Stack
+
+* Python
+* Pandas, NumPy
+* Scikit-learn
+* Streamlit
+* Joblib
+
+---
+## 📂 Project Structure
+
+```
+customer-churn-recommendation-system/
+│
+├── Customer_Churn_Pred_Workflow.ipynb     # Research & experimentation notebook
+├── Churn_pred_pipeline.ipynb              # Production pipeline training notebook
+├── churn_app.py                               # Streamlit application
+├── churn_pipeline.pkl                     # Saved trained pipeline model
+├── Customer-Churn.csv                     # Dataset
+├── requirements.txt                       # Project dependencies
+└── README.md                              # Project documentation
+```
+---
+
+## ▶️ Run the Streamlit App
+
+Clone the repository:
+
+```
+git clone https://github.com/apoorvds99/customer-churn-recommendation-system.git
+cd customer-churn-recommendation-system
+```
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```
+streamlit run churn_app.py
+```
+
+---
+
+## 💡 Business Insight
+
+The model identified strong retention indicators such as:
+
+* long-term contracts
+* higher tenure
+* automatic payment methods
+* multiple subscribed services
+
+High churn signals include month-to-month contracts and electronic check payments.
 
 ---
 
